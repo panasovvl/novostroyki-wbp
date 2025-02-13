@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новостройки.Шоп</title>
+</head>
+
+<body>
+  <header class="m-header">
+    <div class="m-container">
+      <div class="m-header__box">
+        <nav class="m-header__soc">
+          <a href="#">
+            <img src="img/WhatsApp-24.svg" alt="WhatsApp">
+          </a>
+          <a href="#">
+            <img src="img/VK_24.svg" alt="VK">
+          </a>
+          <a href="#">
+            <img src="img/Telegram_24.svg" alt="Telegram_24">
+          </a>
+        </nav>
+        <form action="#" method="get" class="m-header__search">
+          <div class="m-header__search-field">
+            <input type="text" class="" placeholder="Введите название ЖК или КП">
+            <button class="" type="button"><img src="img/search_24.svg" alt="Search"></button>
+          </div>
+        </form>
+        <div class="m-header__phone">
+          <img src="img/phone.svg" alt="Phone" class="m-header__phone-icon">
+          <a href="tel:78005552276" class="">+7 800 555 22 76</a>
+          <p class="m-header__phone-text">Бесплатный звонок</p>
+        </div>
+        <h1 class="m-header__brand brand-font">
+          Новостройки<span>.Шоп</span>
+        </h1>
+        <div class="m-header__mobile-top">
+          <button class="m-header__burger-close">
+            <img src="img/Burger-close.svg" alt="Burger Close">
+          </button>
+        </div>
+        <nav class="m-header__menu">
+          <span class="brand-font m-header__brand-aligner">&nbsp;</span>
+          <ul class="list-reset">
+            <li><a href="#" class="m-header__link">Квартиры</a></li>
+            <li><a href="#" class="m-header__link">Дома</a></li>
+            <li><a href="#" class="m-header__link">Застройщик</a></li>
+            <li><a href="#" class="m-header__link">Акции</a></li>
+            <li><a href="#" class="m-header__link">Услуги</a></li>
+            <li><a href="#" class="m-header__link">Блог</a></li>
+            <li><a href="#" class="m-header__link">Мы</a></li>
+            <li><a href="#" class="m-header__link">Вакансии</a>
+
+            </li><img src="img/heart.svg" alt="Heart" class="m-header__heart">
+          </ul>
+        </nav>
+      </div>
+      <div class="m-header__mobile">
+        <button class="m-header__burger">
+          <img src="img/Burger.svg" alt="Burger menu">
+        </button>
+        <img src="img/heart.svg" alt="Heart" class="m-header__heart">
+        <h1 class="m-header__brand brand-font">
+          Новостройки<span>.Шоп</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+  <section class="m-filter">
+    <div class="m-container">
+      <h1 class="m-filter__h1 text-h1">Ключи от вашего дома</h1>
+      <h1 class="m-filter__h1-mobile text-h1">Поиск</h1>
+      <div class="m-filter__group">
+        <div class="m-filter__mobile-top">
+          <h3 class="m-filter__h3">Фильтры</h3>
+          <button class="m-filter__mobile-close">
+            <img src="img/Burger-close.svg" alt="Mobile Close">
+          </button>
+        </div>
+        <div class="m-filter__mobile-reset">
+          <button>Сбросить</button>
+        </div>
+        <div class="m-filter__type-grp">
+          <label class="m-filter__type-btn">
+            <input type="radio" name="ned-type" checked value="Новостройки">
+            Новостройки
+          </label>
+          <label class="m-filter__type-btn">
+            <input type="radio" name="ned-type" value="Коттеджи">
+            Коттеджи
+          </label>
+          <label class="m-filter__type-btn">
+            <input type="radio" name="ned-type" value="Коммерческая недвижимость">
+            Коммерческая недвижимость
+          </label>
+        </div>
+        <div class="m-filter__bottom-box">
+          <!-- <div class="m-filter__other-grp"> -->
+          <div class="m-filter__btn m-filter__rooms drop">
+            <button>
+              Комнат
+              <div class="drop__icon"></div>
+            </button>
+            <div class="m-filter__rooms-box drop__box">
+              <div class="drop__inner">
+                <label class="m-filter__rooms-item">
+                  <input type="radio" name="rooms" value="1" checked>
+                  1
+                </label>
+                <label class="m-filter__rooms-item">
+                  <input type="radio" name="rooms" value="2">
+                  2
+                </label>
+                <label class="m-filter__rooms-item">
+                  <input type="radio" name="rooms" value="3">
+                  3
+                </label>
+                <label class="m-filter__rooms-item">
+                  <input type="radio" name="rooms" value="4">
+                  4+
+                </label>
+                <label class="m-filter__rooms-item m-filter__studio">
+                  <input type="checkbox" name="studio" value="studio">
+                  Студия
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="m-filter__btn m-filter__price drop">
+            <button>
+              Цена
+              <div class="drop__icon"></div>
+            </button>
+            <div class="m-filter__price-box drop__box">
+              <div class="drop__inner">
+                <div class="m-filter__field">
+                  <input type="text" name="price-from" placeholder="От">
+                  ₽
+                </div>
+                <div class="m-filter__field">
+                  <input type="text" name="price-to" placeholder="До">
+                  ₽
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-filter__btn m-filter__area drop">
+            <button>
+              Площадь
+              <div class="drop__icon"></div>
+            </button>
+            <div class="m-filter__area-box drop__box">
+              <div class="drop__inner">
+                <div class="m-filter__field">
+                  <input type="text" name="area-from" placeholder="От">
+                  м<sup>2</sup>
+                </div>
+                <div class="m-filter__field">
+                  <input type="text" name="area-to" placeholder="До">
+                  м<sup>2</sup>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-filter__btn m-filter__city dropsearch">
+            <label class="dropsearch__field">
+              <img src="img/search_24.svg" alt="Search">
+              <input type="text" data-ph="Город" data-ph-mobile="Введите город">
+              <button class="dropsearch__clear"><img src="img/Burger-close.svg" alt="Drop reset"></button>
+              <img class="dropsearch__icon" src="img/drop.svg" alt="Drop sign">
+            </label>
+            <div class="dropsearch__list">
+              <ul class="list-reset">
+              </ul>
+            </div>
+          </div>
+          <div class="m-filter__btn m-filter__distr dropsearch">
+            <label class="dropsearch__field">
+              <img src="img/search_24.svg" alt="Search">
+              <input type="text" data-ph="Район" data-ph-mobile="Введите район">
+              <button class="dropsearch__clear"><img src="img/Burger-close.svg" alt="Drop reset"></button>
+              <img class="dropsearch__icon" src="img/drop.svg" alt="Drop sign">
+            </label>
+            <div class="dropsearch__list">
+              <ul class="list-reset">
+              </ul>
+            </div>
+          </div>
+          <!-- </div> -->
+          <button class="m-filter__search">
+            Найти
+          </button>
+        </div>
+      </div>
+      <button class="m-filter__mobile-search">
+        Найти недвижимость
+        <img src="img/search_24.svg" alt="Search">
+      </button>
+      <div class="m-filter__counter-box">
+        <div class="m-filter__counter">
+          <p class="m-filter__number">41297</p>
+          <p class="m-filter__label">Квартир</p>
+        </div>
+        <div class="m-filter__counter">
+          <p class="m-filter__number">83</p>
+          <p class="m-filter__label">ЖК</p>
+        </div>
+        <div class="m-filter__counter">
+          <p class="m-filter__number">88</p>
+          <p class="m-filter__label">Коттеджей</p>
+        </div>
+        <div class="m-filter__counter">
+          <p class="m-filter__number">4</p>
+          <p class="m-filter__label">Коттеджных<br />посёлка</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-popular">
+    <div class="m-container">
+      <div class="m-popular__top">
+        <h2 class="m-popular__h2 text-h2">
+          Популярные ЖК
+        </h2>
+        <a href="#" class="m-popular__all"></a>
+      </div>
+      <div class="m-popular__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="m-popular__card">
+              <div class="m-popular__pic">
+                <img src="img/house1.png" alt="House1">
+                <div>
+                  <p class="m-popular__counter">21</p>
+                  <p class="m-popular__counter-label">Квартир в продаже</p>
+                </div>
+                <label><input type="checkbox"></label>
+              </div>
+              <h4 class="m-popular__price">от 17 484 000 ₽</h4>
+              <h3 class="m-popular__name">ЖК «Девелопмент Плаза»</h3>
+              <h3 class="m-popular__address">г. Краснодар, 40 лет Победы ул., д. 33 Г</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="m-popular__card">
+              <div class="m-popular__pic">
+                <img src="img/house2.png" alt="House2">
+                <div>
+                  <p class="m-popular__counter">26</p>
+                  <p class="m-popular__counter-label">Квартир в продаже</p>
+                </div>
+                <label><input type="checkbox"></label>
+              </div>
+              <h4 class="m-popular__price"></h4>
+              <h3 class="m-popular__name"></h3>
+              <h3 class="m-popular__address"></h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="m-popular__card">
+              <div class="m-popular__pic">
+                <img src="img/house3.png" alt="House3">
+                <div>
+                  <p class="m-popular__counter">249</p>
+                  <p class="m-popular__counter-label">Квартир в продаже</p>
+                </div>
+                <label><input type="checkbox"></label>
+              </div>
+              <h4 class="m-popular__price">от 3 785 210 ₽</h4>
+              <h3 class="m-popular__name">ЖК «Архитектор»</h3>
+              <h3 class="m-popular__address">г. Краснодар, Западный обход мкр., д. литер 1.1</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="m-popular__card">
+              <div class="m-popular__pic">
+                <img src="img/house2.png" alt="House2">
+                <div>
+                  <p class="m-popular__counter">35</p>
+                  <p class="m-popular__counter-label">Квартир в продаже</p>
+                </div>
+                <label><input type="checkbox"></label>
+              </div>
+              <h4 class="m-popular__price"></h4>
+              <h3 class="m-popular__name"></h3>
+              <h3 class="m-popular__address"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <section class="m-ipot">
+    <div class="m-container">
+      <div class="m-ipot__box">
+        <div class="m-ipot__info">
+          <h2 class="m-ipot__h2 text-h2">Подобрать ипотеку</h2>
+          <p class="m-ipot__p">Полное ипотечное сопровождение: от подбора программы и банка с наиболее выгодными условия
+            до сбора документов и финального подписания!</p>
+          <div class="m-ipot__btns">
+            <button class="m-iport__calc">Открыть&NewLine;калькулятор</button>
+            <button class="m-iport__spec">Консультация&NewLine;специалиста</button>
+          </div>
+        </div>
+        <div class="m-ipot__icon">
+          <svg width="346" height="239" viewBox="0 0 346 239" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M177.133 180.089L180.464 167.394C183.129 157.207 188.57 147.803 196.786 139.183C205.113 130.562 215.828 123.627 228.929 118.376C242.031 113.126 257.187 110.501 274.397 110.501C292.051 110.501 306.374 113.087 317.366 118.259C328.358 123.431 335.963 130.327 340.183 138.947C344.402 147.568 345.124 157.05 342.348 167.394L339.017 180.089C336.352 190.199 330.856 199.602 322.529 208.301C314.312 216.921 303.598 223.857 290.385 229.107C277.172 234.358 261.85 236.983 244.418 236.983C226.986 236.983 212.83 234.358 201.949 229.107C191.068 223.857 183.518 216.921 179.298 208.301C175.19 199.602 174.469 190.199 177.133 180.089ZM238.423 167.394L235.092 180.089C233.981 184.478 234.481 188.866 236.59 193.255C238.811 197.643 244.307 199.838 253.079 199.838C262.294 199.838 268.845 197.722 272.731 193.49C276.617 189.18 279.171 184.713 280.392 180.089L283.723 167.394C284.945 162.692 284.612 158.147 282.724 153.759C280.947 149.37 275.285 147.176 265.736 147.176C256.965 147.176 250.525 149.37 246.417 153.759C242.309 158.147 239.644 162.692 238.423 167.394ZM3.07363 71.5973L5.73838 58.902C7.959 48.4794 13.233 38.9972 21.5603 30.4553C29.9987 21.8351 40.8798 14.9389 54.2035 9.76678C67.5272 4.59465 82.683 2.00858 99.6708 2.00858C117.325 2.00858 131.537 4.59465 142.307 9.76678C153.077 14.9389 160.516 21.8351 164.624 30.4553C168.843 38.9972 169.842 48.4794 167.622 58.902L164.957 71.5973C162.848 81.9415 157.629 91.3846 149.302 99.9264C140.974 108.468 130.093 115.286 116.659 120.38C103.224 125.474 87.7904 128.021 70.3585 128.021C52.9266 128.021 38.8812 125.474 28.2222 120.38C17.5632 115.208 10.1796 108.351 6.07147 99.8089C1.96332 91.1887 0.964039 81.7848 3.07363 71.5973ZM64.3629 58.902L61.6981 71.5973C60.6988 76.2992 61.1985 80.7661 63.197 84.9978C65.3066 89.2295 70.5806 91.3454 79.019 91.3454C88.2346 91.3454 94.8409 89.2295 98.838 84.9978C102.835 80.7661 105.333 76.2992 106.333 71.5973L108.997 58.902C109.997 54.2001 109.608 49.6549 107.832 45.2664C106.166 40.8779 100.559 38.6837 91.0103 38.6837C82.2389 38.6837 75.7991 40.9563 71.6909 45.5015C67.6938 49.9684 65.2511 54.4352 64.3629 58.902Z"
+              fill="#FF0033" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M67.7579 237C60.9359 237 57.2441 229.009 61.666 223.814L241.497 12.5542C247.197 5.85814 255.548 2 264.341 2H279.248C286.07 2 289.762 9.99077 285.34 15.1855L105.509 226.446C99.809 233.142 91.4582 237 82.6646 237H67.7579Z"
+              fill="#FF0033" />
+            <path
+              d="M177.133 180.089L180.464 167.394C183.129 157.207 188.57 147.803 196.786 139.183C205.113 130.562 215.828 123.627 228.929 118.376C242.031 113.126 257.187 110.501 274.397 110.501C292.051 110.501 306.374 113.087 317.366 118.259C328.358 123.431 335.963 130.327 340.183 138.947C344.402 147.568 345.124 157.05 342.348 167.394L339.017 180.089C336.352 190.199 330.856 199.602 322.529 208.301C314.312 216.921 303.598 223.857 290.385 229.107C277.172 234.358 261.85 236.983 244.418 236.983C226.986 236.983 212.83 234.358 201.949 229.107C191.068 223.857 183.518 216.921 179.298 208.301C175.19 199.602 174.469 190.199 177.133 180.089ZM238.423 167.394L235.092 180.089C233.981 184.478 234.481 188.866 236.59 193.255C238.811 197.643 244.307 199.838 253.079 199.838C262.294 199.838 268.845 197.722 272.731 193.49C276.617 189.18 279.171 184.713 280.392 180.089L283.723 167.394C284.945 162.692 284.612 158.147 282.724 153.759C280.947 149.37 275.285 147.176 265.736 147.176C256.965 147.176 250.525 149.37 246.417 153.759C242.309 158.147 239.644 162.692 238.423 167.394ZM3.07363 71.5973L5.73838 58.902C7.959 48.4794 13.233 38.9972 21.5603 30.4553C29.9987 21.8351 40.8798 14.9389 54.2035 9.76678C67.5272 4.59465 82.683 2.00858 99.6708 2.00858C117.325 2.00858 131.537 4.59465 142.307 9.76678C153.077 14.9389 160.516 21.8351 164.624 30.4553C168.843 38.9972 169.842 48.4794 167.622 58.902L164.957 71.5973C162.848 81.9415 157.629 91.3846 149.302 99.9264C140.974 108.468 130.093 115.286 116.659 120.38C103.224 125.474 87.7904 128.021 70.3585 128.021C52.9266 128.021 38.8812 125.474 28.2222 120.38C17.5632 115.208 10.1796 108.351 6.07147 99.8089C1.96332 91.1887 0.964039 81.7848 3.07363 71.5973ZM64.3629 58.902L61.6981 71.5973C60.6988 76.2992 61.1985 80.7661 63.197 84.9978C65.3066 89.2295 70.5806 91.3454 79.019 91.3454C88.2346 91.3454 94.8409 89.2295 98.838 84.9978C102.835 80.7661 105.333 76.2992 106.333 71.5973L108.997 58.902C109.997 54.2001 109.608 49.6549 107.832 45.2664C106.166 40.8779 100.559 38.6837 91.0103 38.6837C82.2389 38.6837 75.7991 40.9563 71.6909 45.5015C67.6938 49.9684 65.2511 54.4352 64.3629 58.902Z"
+              stroke="white" stroke-width="4" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M67.7579 237C60.9359 237 57.2441 229.009 61.666 223.814L241.497 12.5542C247.197 5.85814 255.548 2 264.341 2H279.248C286.07 2 289.762 9.99077 285.34 15.1855L105.509 226.446C99.809 233.142 91.4582 237 82.6646 237H67.7579Z"
+              stroke="white" stroke-width="4" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-why">
+    <div class="m-container">
+      <h2 class="m-why__h2 text-h2">Почему мы</h2>
+      <div class="m-why__box">
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-star.svg" alt="Star">
+          </div>
+          4.9 средняя оценка<br />наших клиентов о нас
+        </div>
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-alarm.svg" alt="Alerm-clock">
+          </div>
+          24/7<br />поддержка клиентов
+        </div>
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-settings.svg" alt="Settings">
+          </div>
+          Сопровождение<br />на каждом этапе
+        </div>
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-fire.svg" alt="Fire">
+          </div>
+          Более 7 лет<br />успешной работы
+        </div>
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-users.svg" alt="Users">
+          </div>
+          1000+<br />уже купили с нами
+        </div>
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-coupon.svg" alt="Coupon">
+          </div>
+          0 — стоимость услуг<br />для наших клиентов
+        </div>
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-wallet.svg" alt="Wallet">
+          </div>
+          <p>Акции и скидки<br />от <span class="m-why__command">команды</span> специалистов</p>
+        </div>
+        <div class="m-why__item">
+          <div class="m-why__icon">
+            <img src="img/icon-rocket.svg" alt="Rocket">
+          </div>
+          Ипотечные брокеры<br />с огромным опытом
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-about">
+    <div class="m-container">
+      <div class="m-about__box">
+        <div class="m-about__pic">
+          <img src="img/about-pic.jpg" alt="Staff">
+          <h3 class="m-about__brand">
+            Новостройки<span>.Шоп</span>
+          </h3>
+        </div>
+        <div class="m-about__info">
+          <h3 class="m-about__h3">О компании</h3>
+          <div class="m-about__p-block">
+            <div>
+              <p class="m-about__p">Компания Новостройки.SHOP - это крупнейшее агентство недвижимости в городе
+                Краснодаре, работающее на рынке недвижимости уже более c 2018 года. Компания специализируется на продаже
+                новостроек и вторичного жилья, оказывает услуги по сопровождению сделок, а также предоставляет
+                консультации по всем вопросам, связанным с недвижимостью.</p>
+              <p class="m-about__p-more">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eos qui, et
+                eum quisquam nesciunt culpa dignissimos earum excepturi impedit nostrum quam ipsum eligendi facere
+                expedita quis repudiandae laudantium veritatis.</p>
+            </div>
+            <label class="m-about__more-btn"><input type="checkbox"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-serv">
+    <div class="m-container">
+      <h2 class="m-serv__h2 text-h2">
+        Наши услуги
+      </h2>
+      <div class="m-serv__accord">
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-1.png" alt="Services">
+            <button class="ac-trigger">Подберем квартиру&NewLine;в новостройке</button>
+          </div>
+          <div class="ac-panel">Воспользуйтесь профессиональной помощью в подборе квартиры в новостройках, экономя время
+            и деньги</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-2.png" alt="Services">
+            <button class="ac-trigger">Программа экскурсий&NewLine;по новостройкам </button>
+          </div>
+          <div class="ac-panel">Выберите свою идеальную квартиру с нашей помощью</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-3.png" alt="Services">
+            <button class="ac-trigger">Юридическое&NewLine;сопровождение сделки</button>
+          </div>
+          <div class="ac-panel">Юридическое сопровождение сделок с недвижимостью в Краснодаре и крае: консультация,
+            оформление</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-4.png" alt="Services">
+            <button class="ac-trigger">Кэшбек на квартиры&NewLine;в новостройке</button>
+          </div>
+          <div class="ac-panel">Не упустите шанс купить квартиру в Краснодаре с кэшбеком до 1 000 000 рублей</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-5.png" alt="Services">
+            <button class="ac-trigger">Херсонсий&NewLine;сертификат</button>
+          </div>
+          <div class="ac-panel">Приобретайте квартиру в Краснодаре с Херсонским сертификатом, и льготной ипотекой от
+            Сбербанка</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-6.png" alt="Services">
+            <button class="ac-trigger">Строительство частных&NewLine;домов и коттеджей</button>
+          </div>
+          <div class="ac-panel">Предлагаем услугу строительства домов и коттеджей под ключ в Краснодаре и крае. Все виды
+            строительных работ</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-7.png" alt="Services">
+            <button class="ac-trigger">Подберем квартиру&NewLine;на вторичке</button>
+          </div>
+          <div class="ac-panel">Компания предлагает свои услуги по поиску недвижимости. Большая база объектов</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-8.png" alt="Services">
+            <button class="ac-trigger">Поиск&NewLine;покупателя</button>
+          </div>
+          <div class="ac-panel">Наша компания поможет найти покупателя на вашу квартиру, частный дом</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-9.png" alt="Services">
+            <button class="ac-trigger">Приемка квартиры&NewLine;в новостройке</button>
+          </div>
+          <div class="ac-panel">Подготовьтесь к безопасной и уверенной приемке своей квартиры в новостройке</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-10.png" alt="Services">
+            <button class="ac-trigger">Ипотека&NewLine;без первоначального взноса</button>
+          </div>
+          <div class="ac-panel">Ипотека без первого взноса - купить квартиру в Краснодаре без начальных вложений и с
+            низкими процентными ставками</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-11.png" alt="Services">
+            <button class="ac-trigger">Ипотечный&NewLine;брокер</button>
+          </div>
+          <div class="ac-panel">Ипотечные брокеры компании Новостройки.SHOP предоставляют помощь в получении ипотеки в
+            банке «под ключ»</div>
+        </div>
+        <div class="ac">
+          <div class="ac-header">
+            <img src="img/serv-12.png" alt="Services">
+            <button class="ac-trigger">Ремонт, отделка&NewLine;и создание дизайна</button>
+          </div>
+          <div class="ac-panel">Предлагаем услуги ремонта, отделки и дизайна помещений, домов, коттеджей, квартир</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-consult">
+    <div class="m-container">
+      <div class="m-consult__box">
+        <h2 class="m-consult__h2 text-h2">
+          Бесплатная консультация нашего эксперта
+        </h2>
+        <p class="m-counsult__p">
+          Оставьте заявку или звоните нам<span>&nbsp;по телефону
+          <a href="tel:74951200005">+7 495 120-00-05</a>
+          <a href="#">
+            <img src="img/WhatsApp-24.svg" alt="WhatsApp">
+          </a>
+          <a href="#">
+            <img src="img/Telegram_24.svg" alt="Telegram_24">
+          </a>
+          </span>
+        </p>
+        <input type="text" class="m-consult__name" placeholder="Ваше имя">
+        <input type="text" class="m-consult__tel" placeholder="+7 ХХХ ХХХ ХХ ХХ">
+        <button class="m-consult__btn">Получить консультацию</button>
+        <p class="m-consult__pdata">Нажимая кнопку, вы даёте согласие на обработку <a href="#">персональных данных</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="m-reviews">
+    <div class="m-container">
+      <div style="margin:0 auto;max-width:100%;width:600px;height:600px;overflow:hidden;position:relative;">
+        <iframe style="width:100%;height:100%;border:none;box-sizing:border-box"
+          src="https://yandex.ru/maps-reviews-widget/61914510774?comments"></iframe>
+        <a href="https://yandex.ru/maps/org/novostroyki_shop/61914510774/" target="_blank"
+          style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Новостройки
+          Шоп на карте Краснодара — Яндекс Карты</a>
+      </div>
+    </div>
+  </section> -->
+  <section class="m-blog">
+    <div class="m-container">
+      <div class="m-blog__box">
+        <h2 class="m-blog__h2 text-h2"></h2>
+        <a href="#" class="m-blog__blog-link">
+          Весь блог
+          <img class="m-blog__outlink" src="img/outlink.svg" alt="Link outside">
+        </a>
+        <a href="#" class="m-blog__youtube-link">
+          <img class="m-blog__youtube-icon" src="img/youtube.svg" alt="Youtube">
+          Youtube канал
+          <img class="m-blog__outlink" src="img/outlink.svg" alt="Link outside">
+        </a>
+        <div class="m-blog__blog-box">
+          <div class="m-blog__blog-item">
+            <img class="m-blog__pic" src="img/blog-1.jpg" alt="Blog Pic">
+            <p class="m-blog__blog-tag">
+              Видеообзор
+            </p>
+            <h4 class="m-blog__title">
+              ЖК «Мегасити»
+            </h4>
+            <p class="m-blog__p">Удобство рядом с Краснодаром</p>
+            <p class="m-blog__date">
+              <img src="img/calend.svg" alt="Calendar">
+              27.09.2027
+            </p>
+          </div>
+          <div class="m-blog__blog-item">
+            <img class="m-blog__pic" src="img/blog-1.jpg" alt="Blog Pic">
+            <p class="m-blog__blog-tag">
+              Акция
+            </p>
+            <h4 class="m-blog__title">
+              ЖК «Дом на Московской»
+            </h4>
+            <p class="m-blog__p">Обзор и преимущества</p>
+            <p class="m-blog__date">
+              <img src="img/calend.svg" alt="Calendar">
+              27.09.2027
+            </p>
+          </div>
+          <div class="m-blog__blog-item">
+            <img class="m-blog__pic" src="img/blog-1.jpg" alt="Blog Pic">
+            <p class="m-blog__blog-tag">
+              Новости
+            </p>
+            <h4 class="m-blog__title">
+              ЖК «Мегасити»
+            </h4>
+            <p class="m-blog__p">Удобство рядом с Краснодаром</p>
+            <p class="m-blog__date">
+              <img src="img/calend.svg" alt="Calendar">
+              27.09.2027
+            </p>
+          </div>
+          <div class="m-blog__blog-item">
+            <img class="m-blog__pic" src="img/blog-1.jpg" alt="Blog Pic">
+            <p class="m-blog__blog-tag">
+              Акция
+            </p>
+            <h4 class="m-blog__title">
+              ЖК «Дом на Московской»
+            </h4>
+            <p class="m-blog__p">Обзор и преимущества</p>
+            <p class="m-blog__date">
+              <img src="img/calend.svg" alt="Calendar">
+              27.09.2027
+            </p>
+          </div>
+        </div>
+        <div class="m-blog__youtube-box">
+          <div class="m-blog__youtube-item">
+            <img class="m-blog__pic" src="img/blog-2.jpg" alt="Youtube pic">
+            <img class="m-blog__youtube-play" src="img/youtube-play.svg" alt="Youtube play">
+            <h4 class="m-blog__title">
+              Цены на новостройки в 2023 году
+            </h4>
+            <p class="m-blog__p">Основные прогнозы стоимости недвижимости! Покупать или подождать?</p>
+            <p class="m-blog__date">
+              <img src="img/calend.svg" alt="Calendar">
+              27.09.2027
+            </p>
+          </div>
+          <div class="m-blog__youtube-item">
+            <img class="m-blog__pic" src="img/blog-3.jpg" alt="Youtube pic">
+            <img class="m-blog__youtube-play" src="img/youtube-play.svg" alt="Youtube play">
+            <h4 class="m-blog__title">
+              Цены на новостройки в 2023 году
+            </h4>
+            <p class="m-blog__p">Основные прогнозы стоимости недвижимости! Покупать или подождать?</p>
+            <p class="m-blog__date">
+              <img src="img/calend.svg" alt="Calendar">
+              27.09.2027
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-search">
+    <div class="m-container">
+      <div class="m-search__top">
+        <h2 class="m-search__h2 text-h2">
+          Часто ищут
+        </h2>
+        <div class="m-search__search-field">
+          <input type="text" class="" placeholder="Введите название ЖК или КП">
+          <button class="" type="button"><img src="img/search_24.svg" alt="Search"></button>
+        </div>
+      </div>
+      <div class="m-search__box">
+        <div class="m-search__block m-search__comp">
+          <div class="m-search__block_head">
+            <h4 class="m-search__title">Жилые комплексы</h4>
+            <button class="m-search__all">Все 83</button>
+          </div>
+          <a href="#" class="m-search__item">ЖК«Авиатор»</a>
+          <a href="#" class="m-search__item">ЖК«Берёзовый»</a>
+          <a href="#" class="m-search__item">ЖК «Девелопмент Плаза»</a>
+          <a href="#" class="m-search__item">ЖК«Абрикосово»</a>
+          <a href="#" class="m-search__item">ЖК«Большая Восточно-Кругликовская»</a>
+          <a href="#" class="m-search__item">ЖК «Сказка град»</a>
+          <a href="#" class="m-search__item">ЖК «Светлоград»</a>
+          <a href="#" class="m-search__item">ЖК«Большая Восточно-Кругликовская»</a>
+          <a href="#" class="m-search__item">ЖК «Мозаика»</a>
+          <a href="#" class="m-search__item">ЖК«Аврора Парк»</a>
+          <a href="#" class="m-search__item">ЖК «Краски»</a>
+          <a href="#" class="m-search__item">ЖК «Грани»</a>
+          <a href="#" class="m-search__item">ЖК «ДарГрад»</a>
+          <a href="#" class="m-search__item">ЖК «Южане»</a>
+          <a href="#" class="m-search__item">ЖК «Стрижи»</a>
+          <a href="#" class="m-search__item">ЖК «Стрижи»</a>
+          <a href="#" class="m-search__item">ЖК «Стрижи»</a>
+        </div>
+        <div class="m-search__block m-search__distr">
+          <div class="m-search__block_head">
+            <h4 class="m-search__title">Районы</h4>
+            <button class="m-search__all">Все 49</button>
+          </div>
+          <a href="#" class="m-search__item">ККБ + Губернский</a>
+          <a href="#" class="m-search__item">Комсомольский</a>
+          <a href="#" class="m-search__item">Фестивальный</a>
+          <a href="#" class="m-search__item">ЗИП + Зиповская</a>
+          <a href="#" class="m-search__item">Баскетхолл</a>
+          <a href="#" class="m-search__item">РИП + П. Метальникова</a>
+          <a href="#" class="m-search__item">Восточно-Кругл., + Панорама</a>
+          <a href="#" class="m-search__item">ЭНКА + Красная площадь</a>
+          <a href="#" class="m-search__item">Немецкая деревня</a>
+          <a href="#" class="m-search__item">Гидрострой</a>
+          <a href="#" class="m-search__item">Академия МВД</a>
+          <a href="#" class="m-search__item">Славянский + сельхоз</a>
+          <a href="#" class="m-search__item">Пашковский</a>
+          <a href="#" class="m-search__item">Авиагородок</a>
+          <a href="#" class="m-search__item">п. Северный</a>
+        </div>
+        <div class="m-search__block m-search__cottag">
+          <div class="m-search__block_head">
+            <h4 class="m-search__title">Коттеджные посёлки</h4>
+            <button class="m-search__all">Все 83</button>
+          </div>
+          <a href="#" class="m-search__item">ЖК «Мега Победа»</a>
+          <a href="#" class="m-search__item">ЖК «Зеленодар»</a>
+          <a href="#" class="m-search__item">ЖК «Отражение»</a>
+          <a href="#" class="m-search__item">ЖК «Гарантия в Немецкой Деревне»</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-join">
+    <div class="m-container">
+      <div class="m-join__box">
+        <h3 class="m-join__h3">Присоединяйтесь к нам<span>&nbsp;в соцсетях</span></h3>
+        <a href="#" class="m-join__youtube">
+          <img src="img/youtube.svg" alt="Youtube">
+        </a>
+        <a href="#" class="m-join__vk">
+          <div role="img"></div>
+        </a>
+        <button class="m-join__telegram">
+          <div role="img"></div>
+          Форум с информацией<br/>по каждому ЖК в телеграм
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer class="m-footer">
+    <div class="m-container">
+      <div class="m-footer__box">
+        <h2 class="m-footer__h2 text-h2">
+          Новостройки.Шоп
+        </h2>
+        <div class="m-footer__menu">
+          <a href="#" class="m-footer__link">Новостройки</a>
+          <a href="#" class="m-footer__link">Дома</a>
+          <a href="#" class="m-footer__link">Застройщики</a>
+          <a href="#" class="m-footer__link">Новости</a>
+          <a href="#" class="m-footer__link">О нас</a>
+          <a href="#" class="m-footer__link">Вакансии</a>
+        </div>
+        <div class="m-footer__contacts">
+          <a href="tel:7800552276" class="m-footer__tel">+7 (800) 55-22-76</a>
+          <p class="m-footer__address">г. Краснодар, ул. Селезнёва, 89, оф. 306</p>
+          <a href="#" class="m-footer__whatsapp"></a>
+          <a href="#" class="m-footer__telegramm"></a>
+          <button class="m-footer__req-call">
+            <img src="img/phone.svg" alt="Phone">
+            Заказать звонок
+          </button>
+        </div>
+        <a href="#" class="m-footer__confident">Политика конфенденциальности</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!--
+Шапка 5+3.5 = 8.5
+Фильтры 1+2+3+1+1+3 = 11
+Популярные 2.5+1= 3.5
+Ипотека: 2
+Почему мы: 2
+О компании: 2
+Наши услуги: 0.5 + 2 = 2.5
+Консультация 2(3.5)
+Вставка отзывов Яндекс: 0.5
+Блог: 3
+Часто ищут: 1.5
+Присоедияйтесь: 1+1.5=2.5
+Подвал: 2
+Всего 43ч
+-->
+
+</html>
