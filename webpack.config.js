@@ -12,10 +12,10 @@ const PATHS = {
 
 module.exports = {
   // stats: 'minimal',
-  mode: "development",
+  // mode: "development",
   // mode: "production",
   //   devtool: "eval-source-map",
-  devtool: "source-map",
+  // devtool: "source-map",
   entry: {
     app: `${PATHS.src}/js/index.js`,
   },
