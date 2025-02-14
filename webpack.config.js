@@ -12,10 +12,10 @@ const PATHS = {
 
 module.exports = {
   // stats: 'minimal',
-  // mode: "development",
+  mode: "development",
   // mode: "production",
   //   devtool: "eval-source-map",
-  // devtool: "source-map",
+  devtool: "source-map",
   entry: {
     app: `${PATHS.src}/js/index.js`,
   },
@@ -69,7 +69,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: `${PATHS.src}/index.html`,
+      // template: `${PATHS.src}/index.html`,
+      template: `html-loader!webpack-html-include-loader!${PATHS.src}/index.html`,
     }),
     new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
@@ -99,10 +100,10 @@ module.exports = {
           "sass-loader",
         ],
       },
-      {
-        test: /\.html$/i,
-        use: "html-loader",
-      },
+      // {
+      //   test: /\.html$/i,
+      //   use: "html-loader",
+      // },
       {
         test: /\.(png|svg|jpg|jpeg|gif|ttf)$/i,
         type: "asset/resource",
